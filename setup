@@ -1,0 +1,7 @@
+#!bin/bash
+
+set -e
+
+sass --watch ./scss/main.scss ./css/main.css
+
+echo "Compiled SASS"

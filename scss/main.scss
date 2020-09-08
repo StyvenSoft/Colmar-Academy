@@ -1,7 +1,7 @@
 @import './config';
 
 body{
-    background-color: $primary-color;
+    background-color: $secondary-color;
     color: set-text-color($primary-color);
     height: 100vh;
     font-family: $font-family;
@@ -13,6 +13,33 @@ a {
     color: set-text-color($primary-color);
     text-decoration: none;
 }
+ul{
+    list-style-type: none;
+}
 .text-secondary{
     color: $secondary-color;
+}
+header {
+    padding: 0 24px;
+
+    nav {
+        background-color: $white;
+        display: flex;
+        justify-content: space-between;
+        height: 64px;
+        align-items: center;
+
+        .brand {
+            display: flex;
+            text-transform: uppercase;
+        }
+    
+        .menu_nav {
+            display: flex;
+
+            .menu_nav__link {
+                margin-left: 16px;
+            }
+        }
+    }
 }
